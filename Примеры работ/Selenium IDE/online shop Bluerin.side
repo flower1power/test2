@@ -1,0 +1,276 @@
+{
+  "id": "c4a91461-ce02-4571-86f5-95c5618362dc",
+  "version": "2.0",
+  "name": "online shop Bluerin",
+  "url": "https://mobile-qa-automation.com",
+  "tests": [{
+    "id": "14100b9a-627a-4e90-835d-ae1d5e5c7009",
+    "name": "Добавление товара в корзину",
+    "commands": [{
+      "id": "1b588f38-53a6-4ab6-b1ec-813eaf598020",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c1b6bee-272e-4365-bfab-baaa41563763",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1340x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b271f95-4b29-4583-99a6-825113fd9cdb",
+      "comment": "",
+      "command": "click",
+      "target": "css=table",
+      "targets": [
+        ["css=table", "css:finder"],
+        ["xpath=//div[@id='recorddiv389651062']/div[3]/div/div/div/div/div/div[2]/div/a/table", "xpath:idRelative"],
+        ["xpath=//table", "xpath:position"],
+        ["xpath=//table[contains(.,'Магазин')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8cdab0c-0118-4520-b13b-d6e3ee8f672e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-product:nth-child(8) .js-product-img",
+      "targets": [
+        ["css=.js-product:nth-child(8) .js-product-img", "css:finder"],
+        ["xpath=//div[@id='rec389658092']/div/div/div/div[2]/div[3]/div[8]/a/div/div", "xpath:idRelative"],
+        ["xpath=//div[8]/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "876800be-f284-4cde-a50a-9188d25a572c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-store-prod-popup-buy-btn-txt",
+      "targets": [
+        ["css=.js-store-prod-popup-buy-btn-txt", "css:finder"],
+        ["xpath=//div[@id='rec389658092']/div/div/div[2]/div[3]/div/div/div/div[2]/div[5]/a/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//a/table/tbody/tr/td", "xpath:position"],
+        ["xpath=//td[contains(.,'Добавить в корзину')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dfdec82-2412-4ddf-81fd-ffb11bd1a47e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t706__product-title",
+      "targets": [
+        ["css=.t706__product-title", "css:finder"],
+        ["xpath=//div[@id='rec389658095']/div/div[2]/div[2]/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "712f42f2-4b34-40aa-ba6a-5a919f4e0270",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Горшок с травой",
+      "targets": [
+        ["linkText=Горшок с травой", "linkText"],
+        ["css=.t706__product-title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Горшок с травой')]", "xpath:link"],
+        ["xpath=//div[@id='rec389658095']/div/div[2]/div[2]/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://mobile-qa-automation.com/catalog/tproduct/389658092-704632896851-gorshok-s-travoi')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": "Горшок с травой"
+    }, {
+      "id": "432ea4b9-73a8-4da6-ba17-ac46df6fb8be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t706__product-quantity",
+      "targets": [
+        ["css=.t706__product-quantity", "css:finder"],
+        ["xpath=//div[@id='rec389658095']/div/div[2]/div[2]/div[2]/div/div[3]/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef3a3b2a-3ed9-4d62-92d4-2391457b0537",
+      "comment": "",
+      "command": "click",
+      "target": "name=tilda-tmp-cart-qnt",
+      "targets": [
+        ["name=tilda-tmp-cart-qnt", "name"],
+        ["css=.t706__product-quantity-inp", "css:finder"],
+        ["xpath=//input[@name='tilda-tmp-cart-qnt']", "xpath:attributes"],
+        ["xpath=//div[@id='rec389658095']/div/div[2]/div[2]/div[2]/div/div[3]/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6422f52-f525-400e-8b47-dcb367373c40",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "name=tilda-tmp-cart-qnt",
+      "targets": [
+        ["name=tilda-tmp-cart-qnt", "name"],
+        ["css=.t706__product-quantity-inp", "css:finder"],
+        ["xpath=//input[@name='tilda-tmp-cart-qnt']", "xpath:attributes"],
+        ["xpath=//div[@id='rec389658095']/div/div[2]/div[2]/div[2]/div/div[3]/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "2c657846-daa6-46b9-a788-170b324a0ffd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t706__product-amount",
+      "targets": [
+        ["css=.t706__product-amount", "css:finder"],
+        ["xpath=//div[@id='rec389658095']/div/div[2]/div[2]/div[2]/div/div[4]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b2c9116-4e9f-426c-9400-306abcee78e8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.t706__product-amount",
+      "targets": [
+        ["css=.t706__product-amount", "css:finder"],
+        ["xpath=//div[@id='rec389658095']/div/div[2]/div[2]/div[2]/div/div[4]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[4]", "xpath:position"]
+      ],
+      "value": "159 р."
+    }, {
+      "id": "a5638bd6-fbb3-4861-80ae-444d71c6abe8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t706__product-del > img",
+      "targets": [
+        ["css=.t706__product-del > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://static.tildacdn.com/lib/linea/1bec3cd7-e9d1-2879-5880-19b597ef9f1a/arrows_circle_remove.svg')]", "xpath:img"],
+        ["xpath=//div[@id='rec389658095']/div/div[2]/div[2]/div[2]/div/div[5]/img", "xpath:idRelative"],
+        ["xpath=//div[5]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8541734e-e4ef-4223-b187-2652a473c769",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "37912080-e29b-42bd-8253-85b3d4d89678",
+    "name": "Фильтрация товара по материалу",
+    "commands": [{
+      "id": "41505890-908e-49e7-96e0-9522b624b0de",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be8fa768-1d72-4aa1-91fd-2dd6e55445eb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1340x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27379a12-7a5e-41dd-964d-b2a3f1f5115e",
+      "comment": "",
+      "command": "click",
+      "target": "css=td",
+      "targets": [
+        ["css=td", "css:finder"],
+        ["xpath=//div[@id='recorddiv389651062']/div[3]/div/div/div/div/div/div[2]/div/a/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Магазин')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5065fe00-f3fa-414a-ad08-03550fd79cb5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t-store__filter__item:nth-child(4) .t-store__filter__custom-sel:nth-child(5) > .t-store__filter__title",
+      "targets": [
+        ["css=.t-store__filter__item:nth-child(4) .t-store__filter__custom-sel:nth-child(5) > .t-store__filter__title", "css:finder"],
+        ["xpath=//div[@id='rec389658092']/div/div/div/div[2]/div/div/div[2]/div/div[3]/div[4]/div[2]/div/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68958cbf-93cc-4f3d-b58d-02c846c7e636",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-product-img",
+      "targets": [
+        ["css=.js-product-img", "css:finder"],
+        ["xpath=//div[@id='rec389658092']/div/div/div/div[2]/div[3]/div/a/div/div", "xpath:idRelative"],
+        ["xpath=//a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25a4ce05-ea2d-4629-88e4-4a9e6301677f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-store-prod-charcs:nth-child(2)",
+      "targets": [
+        ["css=.js-store-prod-charcs:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='rec389658092']/div/div/div[2]/div[3]/div/div/div/div[2]/div[6]/div[2]/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Материал: Пластик')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a88855a0-ad13-4149-a607-7b811177d5d3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.js-store-prod-charcs:nth-child(2)",
+      "targets": [
+        ["css=.js-store-prod-charcs:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='rec389658092']/div/div/div[2]/div[3]/div/div/div/div[2]/div[6]/div[2]/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Материал: Пластик')]", "xpath:innerText"]
+      ],
+      "value": "Материал: Пластик"
+    }, {
+      "id": "ac7634a7-4123-46e6-90e8-f13dae1cbbd3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t-popup__close-icon_cross",
+      "targets": [
+        ["css=.t-popup__close-icon_cross", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "665d39ca-008a-435c-8d20-493af9ce609f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t-store__filter__chosen-val",
+      "targets": [
+        ["css=.t-store__filter__chosen-val", "css:finder"],
+        ["xpath=//div[@id='rec389658092']/div/div/div/div[2]/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc71c097-997d-4c47-8924-35f2700b922c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "145d990f-397c-428b-91b3-56d1d2090009",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["14100b9a-627a-4e90-835d-ae1d5e5c7009"]
+  }],
+  "urls": ["https://mobile-qa-automation.com/"],
+  "plugins": []
+}
